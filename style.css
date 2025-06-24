@@ -1,33 +1,42 @@
+/* style.css */
+
+/* --- Fontes Personalizadas --- */
+@font-face {
+  font-family: 'Avallon'; 
+  src: url('Avallon.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f0f0f0; /* Fundo claro para contraste com o logo */
-  flex-direction: column; /* Para empilhar o logo e o texto */
+  background-color: #f0f0f0; 
+  flex-direction: column; 
 }
 
 .logo-container {
-  width: 300px; /* Largura do contêiner do logo */
-  height: 300px; /* Altura do contêiner do logo */
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; /* Espaço entre o logo e o texto */
 }
 
 .flexi-logo-svg {
-  /* Tamanho base do SVG, ajuste conforme necessário */
+
   width: 100%; 
   height: 100%;
-  display: block; /* Para remover espaços extras */
+  display: block;
 }
 
 .logo-text-flexi {
-  font-family: 'Brush Script MT', cursive; /* Tentando uma fonte manuscrita, pode ajustar */
-  font-size: 70px; /* Tamanho maior para o nome do logo */
-  color: #7B00FF; /* Cor similar ao roxo do logo */
-  margin-top: 20px; /* Espaçamento da parte de cima */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra para dar destaque */
+  font-family: 'Avallon', cursive;
+  font-size: 70px;
+  color: #8B52FF;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  padding-left: 6px;
 }

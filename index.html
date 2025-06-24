@@ -9,25 +9,70 @@
 
   <div class="logo-container">
     <svg class="flexi-logo-svg" viewBox="0 0 200 200">
-        <rect x="10" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
 
-        <path d="M 90 45 
-                C 120 40, 125 50, 110 55
-                C 110 62, 100 55, 80 65
-                C 60 80, 35 100, 70 135 
-                C 120 160, 50 170, 50 140 
-                C 20 100, 10 80, 90 45 Z" fill="#7B00FF" opacity="0.8"/>
-        <!-- <path d="M 100 40 
-                C 150 20, 180 80, 150 120 
-                C 120 160, 50 170, 50 120 
-                C 50 70, 100 40, 100 40 Z" fill="#9933FF" transform="rotate(120 100 100)" opacity="0.8"/>
-        <path d="M 100 40
-                C 150 20, 180 80, 150 120 
-                C 120 160, 50 170, 50 120 
-                C 50 70, 100 40, 100 40 Z" fill="#BB66FF" transform="rotate(240 100 100)" opacity="0.8"/>   -->
-        <circle cx="102.5" cy="102.5" r="38" fill="#303030"/> 
-        <circle cx="100" cy="100" r="23" fill="#909090"/> 
-        <circle cx="100" cy="100" r="19" fill="#000000"/> 
+          <linearGradient id="inferior-direito" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2F2F2F" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
     </svg>
 </div>
 <div class="logo-text-flexi">Fléxi</div>
