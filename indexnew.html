@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo Flexi - Animação</title>
+  <link rel="stylesheet" href="stylenew.css">
+  <script src="script.js" defer></script>
+</head>
+  
+<body>
+
+<!-- Ainda precisa ser otimizado:
+ 
+1° Reajustar cores para evitar repetições com os frames
+2° Diminuir a quantidade de frames (depende da velocidade do tempo de parada)
+3° Tentar reduzir o tempo pra 2 milissegundos por frame -->
+
+  <div class="logo-container">
+    <svg class="flexi-logo-svg" id="frame1" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/>  
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame2" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior2" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central2" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="3" fill="url(#circulo-maior2)"/> 
+        <circle cx="101" cy="101" r="2" fill="url(#circulo-central2)"/> 
+        <circle cx="101" cy="101" r="1" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame3" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior3" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central3" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="6" fill="url(#circulo-maior3)"/> 
+        <circle cx="101" cy="101" r="4" fill="url(#circulo-central3)"/> 
+        <circle cx="101" cy="101" r="2" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame4" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          
+          <linearGradient id="circulo-maior4" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central4" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="9" fill="url(#circulo-maior4)"/> 
+        <circle cx="101" cy="101" r="6" fill="url(#circulo-central4)"/> 
+        <circle cx="101" cy="101" r="4" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame5" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior5" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central5" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="12" fill="url(#circulo-maior5)"/> 
+        <circle cx="101" cy="101" r="8" fill="url(#circulo-central5)"/> 
+        <circle cx="101" cy="101" r="6" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame6" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior6" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central6" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="14" fill="url(#circulo-maior6)"/> 
+        <circle cx="101" cy="101" r="10" fill="url(#circulo-central6)"/> 
+        <circle cx="101" cy="101" r="8" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame7" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior7" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central7" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="16" fill="url(#circulo-maior7)"/> 
+        <circle cx="101" cy="101" r="12" fill="url(#circulo-central7)"/> 
+        <circle cx="101" cy="101" r="10" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame8" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior8" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central8" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="18" fill="url(#circulo-maior8)"/> 
+        <circle cx="101" cy="101" r="14" fill="url(#circulo-central8)"/> 
+        <circle cx="101" cy="101" r="12" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame9" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior9" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central9" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="20" fill="url(#circulo-maior9)"/> 
+        <circle cx="101" cy="101" r="16" fill="url(#circulo-central9)"/> 
+        <circle cx="101" cy="101" r="14" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame10" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior10" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central10" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="22" fill="url(#circulo-maior10)"/> 
+        <circle cx="101" cy="101" r="18" fill="url(#circulo-central10)"/> 
+        <circle cx="101" cy="101" r="16" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame11" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior11" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central11" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="24" fill="url(#circulo-maior11)"/> 
+        <circle cx="101" cy="101" r="20" fill="url(#circulo-central11)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame12" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior12" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central12" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+  
+        <circle class="opaco" cx="101" cy="101" r="25" fill="url(#circulo-maior12)"/> 
+        <circle cx="101" cy="101" r="21" fill="url(#circulo-central12)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame13" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior13" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central13" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="28" fill="url(#circulo-maior13)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central13)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame14" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior14" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central14" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="101" cy="101" r="30" fill="url(#circulo-maior14)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central14)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame15" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior15" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central15" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="101" cy="101" r="32" fill="url(#circulo-maior15)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central15)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame16" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior16" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central16" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="102.5" cy="102.5" r="34" fill="url(#circulo-maior16)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central16)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame17" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior17" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central17" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="102.5" cy="102.5" r="36" fill="url(#circulo-maior17)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central17)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame18" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior18" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central18" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior18)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central18)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame19" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior19" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central19" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="102.5" cy="102.5" r="40" fill="url(#circulo-maior19)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central19)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame20" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior20" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central20" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="102.5" cy="102.5" r="42" fill="url(#circulo-maior20)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central20)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame21" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior21" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central21" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+  
+        <circle class="opaco" cx="102.5" cy="102.5" r="40" fill="url(#circulo-maior21)"/> 
+        <circle cx="101" cy="101" r="25" fill="url(#circulo-central21)"/> 
+        <circle cx="101" cy="101" r="20" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame22" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior22" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central22" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior22)"/> 
+        <circle cx="101" cy="101" r="27" fill="url(#circulo-central22)"/> 
+        <circle cx="101" cy="101" r="22" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame23" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior23" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central23" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior23)"/> 
+        <circle cx="101" cy="101" r="25" fill="url(#circulo-central23)"/> 
+        <circle cx="101" cy="101" r="20" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame24" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="circulo-maior24" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central24" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+ 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior24)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central24)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+  <!-- Fim da Animação dos circulos -->
+
+    <svg class="flexi-logo-svg" id="frame25" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo25" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior25" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central25" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 110 50, 120 70, 130 80
+                C 150 100, 140 115, 128 128 
+                C 110 140, 100 150, 78 128 
+                C 50 100, 70 90, 78 78 Z" fill="url(#central-esquerdo25)" opacity="1"/>
+          
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior25)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central25)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame26" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo26" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior26" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central26" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 110 45, 120 70, 130 80
+                C 155 100, 140 115, 128 128 
+                C 110 147, 100 150, 78 128 
+                C 45 100, 70 90, 78 78 Z" fill="url(#central-esquerdo26)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior26)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central26)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame27" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo27" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior27" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central27" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 100 45, 120 70, 130 80
+                C 155 90, 140 115, 128 128 
+                C 110 147, 100 150, 78 128 
+                C 45 110, 70 90, 78 78 Z" fill="url(#central-esquerdo27)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior27)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central27)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame28" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo28" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior28" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central28" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 90 45, 120 70, 130 80
+                C 155 80, 140 115, 128 128 
+                C 120 147, 100 150, 78 128 
+                C 45 120, 70 90, 78 78 Z" fill="url(#central-esquerdo28)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior28)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central28)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame29" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo36" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior36" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central36" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 50 30, 120 70, 130 80
+                C 170 40, 140 115, 128 128 
+                C 160 160, 100 150, 78 128 
+                C 30 160, 70 90, 78 78 Z" fill="url(#central-esquerdo36)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior36)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central36)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame30" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo40" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior40" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central40" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 78 
+                C 30 40, 120 55, 130 80
+                C 155 25, 155 115, 128 128 
+                C 175 145, 100 160, 78 128 
+                C 45 175, 55 90, 78 78 Z" fill="url(#central-esquerdo40)" opacity="1"/> 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior40)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central40)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame31" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo44" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior44" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central44" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 78 85 
+                C 20 60, 120 50, 130 80 Z" fill="url(#central-esquerdo44)" opacity="1"/> 
+        <path d="M 120 80
+                C 135 15, 160 115, 128 128Z" fill="url(#central-esquerdo44)" opacity="1"/>
+        <path d="M 128 120 
+                C 185 125, 100 165, 78 128 Z" fill="url(#central-esquerdo44)" opacity="1"/>
+        <path d="M 85 128 
+                C 65 185, 50 90, 78 78 Z" fill="url(#central-esquerdo44)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior44)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central44)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame32" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo46" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior46" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central46" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 75 90 
+                C 20 60, 120 50, 115 75
+                C 135 15, 160 115, 130 115 
+                C 185 125, 100 165, 90 130 
+                C 65 185, 50 90, 75 90 Z" fill="url(#central-esquerdo46)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior46)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central46)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame33" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo84" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior84" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central84" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 70 120
+                C 20 140, 70 65, 80 65
+                C 65 20, 140 75, 130 75 
+                C 185 65, 130 125, 125 125 
+                C 175 160, 90 165, 70 120 Z" fill="url(#central-esquerdo84)" transform="rotate(-220 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior84)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central84)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame34" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo85" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior85" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central85" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 70 115
+                C 20 140, 70 65, 85 65
+                C 65 20, 140 75, 130 80 
+                C 185 65, 130 125, 120 125 
+                C 175 160, 90 165, 70 115 Z" fill="url(#central-esquerdo85)" transform="rotate(-240 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior85)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central85)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame35" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo86" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior86" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central86" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+  
+        <path d="M 85 65
+                C 80 65, 70 75, 59 90 
+                C 35 120, 50 130, 70 115   
+                C 70 80, 70 85, 85 65 Z" fill="url(#central-esquerdo86)" transform="rotate(-260 100 100)" opacity="1"/>
+        <path d="M 130 80
+                C 100 70, 90 70, 85 65
+                C 75 40, 90 45, 110 57
+                C 120 65, 130 75, 130 80 Z" fill="url(#central-esquerdo86)" transform="rotate(-260 100 100)" opacity="1"/>
+        <path d="M 120 125
+                C 120 125, 130 120, 130 80
+                C 165 70, 150 95, 149 97 
+                C 140 110, 130 120, 120 125 Z" fill="url(#central-esquerdo86)" transform="rotate(-260 100 100)" opacity="1"/>
+        <path d="M 70 115
+              C 120 125, 100 120, 120 125
+                C 142 138, 150 158, 110 150 
+                C 85 140, 80 135, 70 115 Z" fill="url(#central-esquerdo86)" transform="rotate(-260 100 100)" opacity="1"/>
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior86)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central86)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/>
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame36" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo87" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior87" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central87" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 80 65, 70 75, 59 90 
+                C 35 120, 50 130, 65 110   
+                C 85 80, 70 85, 85 65 Z" fill="url(#central-esquerdo87)" transform="rotate(-280 100 100)" opacity="1"/>
+        <path d="M 130 80
+                C 100 70, 90 60, 90 60
+                C 75 50, 90 40, 110 57
+                C 120 65, 130 75, 130 80 Z" fill="url(#central-esquerdo87)" transform="rotate(-280 100 100)" opacity="1"/>
+        <path d="M 120 125
+                C 120 125, 130 120, 135 90
+                C 160 60, 150 100, 149 97 
+                C 140 110, 130 120, 120 125 Z" fill="url(#central-esquerdo87)" transform="rotate(-280 100 100)" opacity="1"/>
+        <path d="M 70 115
+                C 100 135, 100 130, 110 130
+                C 142 138, 150 158, 110 148 
+                C 85 140, 80 130, 70 115 Z" fill="url(#central-esquerdo87)" transform="rotate(-280 100 100)" opacity="1"/>
+                  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior87)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central87)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame37" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo88" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior88" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central88" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 80 65, 70 75, 59 90 
+                C 35 120, 50 130, 60 110   
+                C 70 90, 60 95, 85 65 Z" fill="url(#central-esquerdo88)" transform="rotate(-300 100 100)" opacity="1"/>
+        <path d="M 130 80
+                C 100 60, 120 70, 95 60
+                C 75 50, 90 40, 110 57
+                C 120 65, 130 75, 130 80 Z" fill="url(#central-esquerdo88)" transform="rotate(-300 100 100)" opacity="1"/>
+        <path d="M 120 125
+                C 120 125, 130 120, 140 90
+                C 150 60, 155 90, 149 97 
+                C 140 110, 130 120, 120 125 Z" fill="url(#central-esquerdo88)" transform="rotate(-300 100 100)" opacity="1"/>
+        <path d="M 70 115
+                C 100 135, 100 130, 110 135
+                C 142 128, 150 158, 110 148 
+                C 85 140, 80 130, 70 115 Z" fill="url(#central-esquerdo88)" transform="rotate(-300 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior88)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central88)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame38" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo89" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior89" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central89" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 80 65, 65 75, 50 100 
+                C 35 120, 52 130, 60 110   
+                C 70 90, 60 95, 85 65 Z" fill="url(#central-esquerdo89)" transform="rotate(-320 100 100)" opacity="1"/>
+        <path d="M 130 80
+                C 100 60, 120 70, 95 60
+                C 75 50, 90 40, 105 45
+                C 120 50, 130 75, 130 80 Z" fill="url(#central-esquerdo89)" transform="rotate(-320 100 100)" opacity="1"/>
+        <path d="M 120 125
+                C 120 125, 130 120, 140 90
+                C 150 60, 155 95, 155 95 
+                C 155 110, 130 120, 120 125 Z" fill="url(#central-esquerdo89)" transform="rotate(-320 100 100)" opacity="1"/>
+        <path d="M 70 115
+                C 100 135, 100 130, 110 135
+                C 142 128, 150 158, 110 150 
+                C 85 140, 80 130, 70 115 Z" fill="url(#central-esquerdo89)" transform="rotate(-320 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior89)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central89)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame39" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo90" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior90" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central90" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 80 65, 55 75, 50 100 
+                C 45 120, 70 130, 65 100   
+                C 70 82, 65 85, 85 65 Z" fill="url(#central-esquerdo90)" transform="rotate(-340 100 100)" opacity="1"/>
+        <path d="M 140 80
+                C 120 65, 120 65, 105 60
+                C 75 60, 90 40, 105 45
+                C 120 50, 135 70, 140 80 Z" fill="url(#central-esquerdo90)" transform="rotate(-340 100 100)" opacity="1"/>
+        <path d="M 130 135
+                C 140 110, 140 120, 142 90
+                C 150 60, 160 80, 160 90 
+                C 155 110, 150 120, 130 135 Z" fill="url(#central-esquerdo90)" transform="rotate(-340 100 100)" opacity="1"/>
+        <path d="M 60 120
+                C 70 135, 100 140, 110 140
+                C 142 140, 120 155, 115 156 
+                C 70 160, 60 120, 60 120 Z" fill="url(#central-esquerdo90)" transform="rotate(-340 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior90)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central90)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame40" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo91" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior91" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central91" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 90 65, 45 65, 45 105 
+                C 45 120, 60 130, 60 105   
+                C 60 90, 60 80, 85 65 Z" fill="url(#central-esquerdo91)" transform="rotate(0 100 100)" opacity="1"/>
+        <path d="M 140 80
+                C 125 65, 120 62, 95 60
+                C 80 60, 70 48, 95 45
+                C 120 45, 135 70, 140 80 Z" fill="url(#central-esquerdo91)" transform="rotate(0 100 100)" opacity="1"/>
+        <path d="M 123 138
+                C 148 105, 145 105, 145 85
+                C 145 70, 155 70, 160 85 
+                C 165 110, 150 120, 123 138 Z" fill="url(#central-esquerdo91)" transform="rotate(0 100 100)" opacity="1"/>
+        <path d="M 60 120
+                C 80 140, 90 150, 120 140
+                C 150 130, 130 155, 125 155 
+                C 110 160, 85 170, 60 120 Z" fill="url(#central-esquerdo91)" transform="rotate(0 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior91)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central91)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame41" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo92" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior92" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central92" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 65
+                C 80 65, 35 75, 45 120 
+                C 55 150, 62 130, 60 120   
+                C 55 90, 60 80, 85 65 Z" fill="url(#central-esquerdo92)" transform="rotate(-20 100 100)" opacity="1"/>
+        <path d="M 140 85
+                C 125 65, 100 55, 80 65
+                C 70 70, 50 60, 80 50
+                C 120 45, 135 70, 140 85 Z" fill="url(#central-esquerdo92)" transform="rotate(-20 100 100)" opacity="1"/>
+        <path d="M 123 138
+                C 140 120, 145 110, 140 90
+                C 135 65, 145 60, 155 80 
+                C 160 110, 150 120, 123 138 Z" fill="url(#central-esquerdo92)" transform="rotate(-20 100 100)" opacity="1"/>
+        <path d="M 60 120
+                C 80 140, 90 150, 120 140
+                C 150 130, 130 155, 125 155 
+                C 110 160, 85 170, 60 120 Z" fill="url(#central-esquerdo92)" transform="rotate(-20 100 100)" opacity="1"/>   
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior92)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central92)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame42" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo93" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior93" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central93" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 85 60
+                C 80 65, 35 75, 45 120 
+                C 55 150, 80 140, 62 122   
+                C 50 100, 60 80, 85 60 Z" fill="url(#central-esquerdo93)" transform="rotate(-40 100 100)" opacity="1"/>
+        <path d="M 140 85
+                C 125 65, 100 55, 80 65
+                C 70 70, 50 75, 75 52
+                C 100 35, 140 70, 140 85 Z" fill="url(#central-esquerdo93)" transform="rotate(-40 100 100)" opacity="1"/>
+        <path d="M 123 138
+                C 140 120, 150 110, 135 80
+                C 120 60, 140 55, 152 78 
+                C 165 110, 150 125, 123 138 Z" fill="url(#central-esquerdo93)" transform="rotate(-40 100 100)" opacity="1"/>
+        <path d="M 60 120
+                C 80 140, 90 155, 128 135
+                C 150 120, 140 145, 125 155 
+                C 110 160, 85 170, 60 120 Z" fill="url(#central-esquerdo93)" transform="rotate(-40 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior93)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central93)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame43" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo94" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior94" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central94" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 137 130
+                C 165 110, 158 90, 152 78
+                C 150 75, 140 55, 129 66
+                C 115 55, 95 40, 75 52
+                C 55 70, 65 70, 66 70
+                C 44 85, 40 105, 45 120
+                C 55 150, 70 135, 68 134
+                C 78 145, 90 170, 125 155
+                C 145 142, 145 130, 137 130
+                L 124 137 
+                C 100 150, 80 145, 62 122 
+                C 50 100, 60 80, 80 65 
+                C 110 55, 130 70, 137 84 
+                C 145 105, 140 120, 124 137 Z" fill="url(#central-esquerdo94)" transform="rotate(-60 100 100)" opacity="1"/>
+  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior94)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central94)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame44" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="inferior-direito95" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior95" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central95" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 142 125
+                C 155 110, 160 95, 152 78
+                C 150 75, 140 55, 129 60
+                C 115 55, 95 40, 75 52
+                C 55 70, 65 70, 60 72
+                C 44 85, 40 105, 45 120
+                C 55 140, 60 145, 72 145
+                C 78 145, 90 170, 125 155
+                C 145 142, 145 130, 142 125
+                L 124 137 
+                C 100 150, 75 145, 62 122 
+                C 50 100, 60 80, 80 65 
+                C 110 55, 130 70, 137 84 
+                C 145 105, 140 125, 124 137 Z" fill="url(#inferior-direito95)" transform="rotate(-80 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior95)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central95)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame45" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="inferior-direito96" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior96" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central96" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 142 125
+                C 155 110, 160 95, 152 78
+                C 150 75, 140 55, 129 60
+                C 115 55, 95 40, 75 52
+                C 55 70, 60 70, 58 73
+                C 44 85, 40 105, 45 120
+                C 55 140, 60 145, 72 145
+                C 78 145, 90 170, 125 155
+                C 145 142, 145 130, 142 125
+                L 124 137 
+                C 100 150, 75 145, 62 125 
+                C 45 100, 60 70, 80 63 
+                C 105 50, 130 70, 137 85 
+                C 145 105, 140 125, 124 137 Z" fill="url(#inferior-direito96)" transform="rotate(-100 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior96)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central96)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame46" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="inferior-direito97" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior97" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central97" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 145 125
+                C 155 110, 160 95, 152 78
+                C 150 75, 140 55, 120 52
+                C 110 50, 85 35, 70 50
+                C 55 70, 60 60, 50 75
+                C 44 85, 40 105, 45 120
+                C 55 140, 60 145, 72 150
+                C 75 150, 90 170, 125 155
+                C 145 142, 145 130, 145 125
+                L 124 135 
+                C 100 150, 75 145, 62 125 
+                C 45 100, 60 70, 80 62 
+                C 105 50, 130 70, 137 85 
+                C 145 105, 140 120, 124 135 Z" fill="url(#inferior-direito97)" transform="rotate(-120 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior97)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central97)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame47" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="inferior-direito98" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior98" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central98" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 145 125
+                C 155 110, 160 95, 152 78
+                C 150 75, 140 55, 115 48
+                C 110 50, 85 35, 70 48
+                C 55 60, 60 50, 48 75
+                C 44 85, 40 105, 45 120
+                C 55 140, 60 145, 72 150
+                C 75 150, 90 170, 125 155
+                C 145 142, 145 130, 145 125
+                L 124 135 
+                C 100 150, 75 145, 62 125 
+                C 40 100, 60 68, 80 60 
+                C 105 50, 130 65, 137 85 
+                C 145 105, 140 120, 124 135 Z" fill="url(#inferior-direito98)" transform="rotate(-140 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior98)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central98)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame48" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="inferior-direito99" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior99" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central99" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 150 122
+                C 155 115, 160 90, 152 78
+                C 148 70, 140 50, 120 42
+                C 100 35, 85 40, 70 44
+                C 50 55, 50 55, 43 70
+                C 35 85, 35 115, 43 125
+                C 55 145, 60 150, 72 155
+                C 75 156, 90 170, 125 155
+                C 145 142, 145 130, 150 122
+                L 124 135 
+                C 100 150, 75 145, 62 125 
+                C 40 100, 60 63, 80 58 
+                C 105 50, 130 60, 137 82 
+                C 145 105, 140 120, 124 135 Z" fill="url(#inferior-direito99)" transform="rotate(-160 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior99)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central99)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame49" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="inferior-direito100" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior100" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central100" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 155 130
+                C 160 120, 170 90, 158 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 35
+                C 60 40, 50 45, 40 60
+                C 30 80, 25 110, 37 130
+                C 45 145, 55 155, 70 160
+                C 90 165, 100 168, 125 160
+                C 145 150, 150 140, 155 130
+                L 124 140 
+                C 100 155, 70 150, 53 122 
+                C 38 95, 55 55, 80 50 
+                C 100 45, 130 50, 142 75 
+                C 150 95, 150 125, 124 140 Z" fill="url(#inferior-direito100)" transform="rotate(-180 100 100)" opacity="1"/> 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior100)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central100)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame50" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+
+          <linearGradient id="inferior-direito101" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior101" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central101" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 155 130
+                C 160 120, 170 90, 158 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 35
+                C 60 40, 50 45, 40 60
+                C 30 80, 25 110, 37 130
+                C 45 145, 55 155, 70 160
+                C 90 165, 100 168, 125 160
+                C 145 150, 150 140, 155 130
+                L 124 140 
+                C 100 155, 70 150, 53 122 
+                C 38 95, 55 55, 80 50 
+                C 100 45, 130 50, 142 75 
+                C 150 95, 150 125, 124 140 Z" fill="url(#inferior-direito101)" transform="rotate(-200 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior101)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central101)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame51" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="inferior-direito102" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior102" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central102" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 155 130
+                C 160 120, 170 90, 158 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 35
+                C 60 40, 50 45, 40 60
+                C 30 80, 25 110, 37 130
+                C 45 145, 55 155, 70 160
+                C 90 165, 100 168, 125 160
+                C 145 150, 150 140, 155 130
+                L 124 137 
+                C 100 150, 70 145, 55 112 
+                C 45 90, 55 60, 80 52 
+                C 100 45, 130 50, 142 80 
+                C 150 95, 150 125, 124 137 Z" fill="url(#inferior-direito102)" transform="rotate(-220 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior102)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central102)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame52" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo103" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito103" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito103" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior103" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central103" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 40 
+                C 112 47, 130 50, 100 50
+                C 90 50, 88 51, 80 52
+                C 25 75, 35 140, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 10 120, 40 40, 100 40 Z" fill="url(#central-esquerdo103)" transform="rotate(180 100 100)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 37 80, 41 70  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito103)" transform="rotate(350 100 100)" opacity="1"/>
+        <path d="M 128 63
+                C 80 39, 50 75, 45 85 
+                C 35 110, 30 95, 34 80  
+                C 45 44, 100 40, 128 63 Z" fill= "url(#superior-direito103)" transform="rotate(290 100 100)" opacity="1"/>
+        <path d="M 158 135
+                C 170 110, 170 90, 158 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 35
+                C 60 40, 50 45, 40 60
+                C 30 80, 25 110, 37 130
+                C 45 145, 55 155, 70 160
+                C 90 165, 100 168, 125 160
+                C 145 150, 150 145, 158 135
+                L 124 137 
+                C 100 150, 70 145, 55 112 
+                C 45 90, 55 60, 80 52 
+                C 100 45, 130 50, 142 80 
+                C 150 95, 150 125, 124 137 Z" fill="url(#inferior-direito103)" transform="rotate(-240 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior103)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central103)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame53" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo104" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito104" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito104" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior104" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central104" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 40 
+                C 112 47, 130 50, 100 50
+                C 90 50, 88 51, 80 52
+                C 25 75, 35 140, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 10 120, 40 40, 100 40 Z" fill="url(#central-esquerdo104)" transform="rotate(160 100 100)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 37 80, 41 70  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito104)" transform="rotate(330 100 100)" opacity="1"/>
+        <path d="M 128 63
+                C 80 39, 50 75, 45 85 
+                C 35 110, 30 95, 34 80  
+                C 45 44, 100 40, 128 63 Z" fill= "url(#superior-direito104)" transform="rotate(270 100 100)" opacity="1"/>
+        <path d="M 158 130
+                C 170 110, 165 90, 155 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 40
+                C 60 45, 50 50, 40 65
+                C 30 80, 30 100, 37 120
+                C 40 135, 60 155, 70 158
+                C 90 165, 100 168, 125 158
+                C 145 150, 150 140, 158 130
+                L 124 137 
+                C 100 150, 70 145, 55 112 
+                C 45 90, 55 60, 80 52 
+                C 100 45, 130 50, 142 80 
+                C 150 95, 150 125, 124 137 Z" fill="url(#inferior-direito104)" transform="rotate(-250 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior104)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central104)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame54" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo105" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito105" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito105" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior105" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central105" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 40 
+                C 112 47, 130 50, 100 50
+                C 90 50, 88 51, 80 52
+                C 25 75, 35 140, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 10 120, 40 40, 100 40 Z" fill="url(#central-esquerdo105)" transform="rotate(140 100 100)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito105)" transform="rotate(310 100 100)" opacity="1"/>
+        <path d="M 128 63
+                C 80 39, 50 75, 45 85 
+                C 35 110, 30 95, 34 80  
+                C 45 44, 100 40, 128 63 Z" fill= "url(#superior-direito105)" transform="rotate(250 100 100)" opacity="1"/>
+        <path d="M 158 130
+                C 170 110, 165 90, 155 70
+                C 152 60, 138 40, 120 35
+                C 100 30, 85 30, 70 40
+                C 60 45, 50 50, 40 65
+                C 30 80, 30 100, 37 120
+                C 40 135, 60 155, 70 158
+                C 90 165, 100 168, 125 158
+                C 145 150, 150 140, 158 130
+                L 124 137 
+                C 100 150, 70 145, 55 112 
+                C 45 90, 55 60, 80 52 
+                C 100 45, 130 50, 142 80 
+                C 150 95, 150 125, 124 137 Z" fill="url(#inferior-direito105)" transform="rotate(-260 100 100)" opacity="1"/>   
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior105)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central105)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame55" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo106" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito106" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito106" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior106" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central106" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 122.5 41.5 
+                C 140 59, 145 75, 146.3 94
+                C 140 50, 90 45, 70 59
+                C 21 90, 70 175, 143 148
+                C 130 160, 110 165, 106 165.5
+                C 105 175, 85 170, 68 158 
+                C -10 115, 49 4, 122.5 41.5 Z" fill="url(#central-esquerdo106)" transform="rotate(120 100 100)" opacity="1"/>
+        <path d="M 139 75 
+                C 100 40, 40 56, 35 110
+                C 35 90, 37 90, 39.5 79
+                C 41 78, 33 80, 40 64  
+                C 50 40, 110 30, 139 75 Z" fill="url(#inferior-direito106)" transform="rotate(290 100 100)" opacity="1"/> 
+        <path d="M 139 81
+                C 100 25, 50 75, 45 85 
+                C 35 110, 30 100, 30 80  
+                C 40 44, 110 18, 139 81 Z" fill= "url(#superior-direito106)" transform="rotate(230 100 100)" opacity="1"/>
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior106)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central106)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame56" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo107" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito107" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito107" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior107" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central107" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 122.5 41.5 
+                C 140 60, 140 65, 143 75
+                C 130 50, 90 45, 70 59
+                C 21 90, 68 166, 130 151.5
+                C 125 160, 110 165, 106 165.5
+                C 105 175, 85 170, 68 158 
+                C -10 115, 49 4, 122.5 41.5 Z" fill="url(#central-esquerdo107)" transform="rotate(100 100 100)" opacity="1"/>
+        <path d="M 125 59
+                C 100 40, 50 57, 38.5 95
+                C 38 90, 38 85, 39.5 79
+                C 41 78, 33 80, 40 64  
+                C 50 40, 99 36.5, 125 59 Z" fill="url(#inferior-direito107)" transform="rotate(270 100 100)" opacity="1"/> 
+        <path d="M 143.5 78
+                C 100 25, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 40 44, 110 19, 143.5 78 Z" fill= "url(#superior-direito107)" transform="rotate(210 100 100)" opacity="1"/> 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior107)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central107)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame57" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo108" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito108" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito108" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior108" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central108" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 122.5 41.5 
+                C 140 60, 140 65, 135 65
+                C 115 50, 90 45, 70 59
+                C 21 90, 68 155, 115 153.5
+                C 115 160, 110 165, 106 165.5
+                C 105 175, 85 170, 68 158 
+                C -10 115, 49 4, 122.5 41.5 Z" fill="url(#central-esquerdo108)" transform="rotate(80 100 100)" opacity="1"/>
+        <path d="M 110 50
+                C 85 40, 50 57, 42 80
+                C 38 90, 38 85, 39.5 79
+                C 41 78, 33 80, 40 64  
+                C 50 40, 95 40, 110 50 Z" fill="url(#inferior-direito108)" transform="rotate(250 100 100)" opacity="1"/> 
+        <path d="M 135 75
+                C 100 25, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 40 44, 110 19, 135 75 Z" fill= "url(#superior-direito108)" transform="rotate(190 100 100)" opacity="1"/> 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior108)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central108)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame58" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo109" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito109" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito109" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior109" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central109" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 122.5 41.5 
+                C 140 50, 140 65, 120 55
+                C 110 50, 90 45, 70 59
+                C 40 90, 50 120, 100 150
+                C 115 160, 110 165, 106 165.5
+                C 105 175, 85 170, 68 158 
+                C 0 110, 50 10, 122.5 41.5 Z" fill="url(#central-esquerdo109)" transform="rotate(60 100 100)" opacity="1"/>
+        <path d="M 100 50
+                C 80 45, 60 60, 54 70
+                C 38 90, 38 85, 39.5 79
+                C 41 78, 33 80, 40 64  
+                C 50 45, 85 40, 100 50 Z" fill="url(#inferior-direito109)" transform="rotate(230 100 100)" opacity="1"/>
+        <path d="M 135 75 
+                C 85 35, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 40 44, 100 30, 135 75 Z" fill= "url(#superior-direito109)" transform="rotate(170 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior109)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central109)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame59" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo110" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito110" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito110" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior110" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central110" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 120 45 
+                C 130 50, 140 65, 115 59.5
+                C 100 55, 80 60, 75 65
+                C 38 92, 52 128, 90 148
+                C 125 170, 95 180, 68 158 
+                C 5 100, 60 25, 120 45 Z" fill="url(#central-esquerdo110)" transform="rotate(40 100 100)" opacity="1"/>
+        <path d="M 100 50
+                C 80 45, 60 60, 54 70
+                C 50 80, 45 83, 39.5 79
+                C 35 75, 37 70, 40 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito110)" transform="rotate(210 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 35, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 40 44, 100 35, 128 70 Z" fill= "url(#superior-direito110)" transform="rotate(150 100 100)" opacity="1"/>
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior110)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central110)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame60" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo111" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito111" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito111" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior111" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central111" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 110 46 
+                C 120 50, 130 65, 108 59.5
+                C 95 58, 85 60, 75 65
+                C 38 92, 52 128, 90 148
+                C 125 170, 95 180, 68 155 
+                C 12 100, 60 30, 110 46 Z" fill="url(#central-esquerdo111)" transform="rotate(20 100 100)" opacity="1"/> 
+        <path d="M 100 50
+                C 80 45, 60 60, 54 70
+                C 42 90, 32 80, 40 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito111)" transform="rotate(190 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 35, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 40 44, 100 40, 128 70 Z" fill= "url(#superior-direito111)" transform="rotate(130 100 100)" opacity="1"/> 
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior111)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central111)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame61" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo112" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito112" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito112" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior112" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central112" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo112)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito112)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito112)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior112)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central112)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame62" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo113" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito113" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito113" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior113" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central113" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo113)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito113)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito113)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior113)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central113)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame63" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo114" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito114" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito114" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior114" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central114" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo114)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito114)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito114)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior114)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central114)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame64" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo115" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito115" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito115" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior115" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central115" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo115)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito115)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito115)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior115)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central115)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame65" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo116" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito116" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito116" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior116" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central116" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo116)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito116)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito116)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior116)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central116)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame66" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo117" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito117" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito117" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior117" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central117" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo117)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito117)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito117)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior117)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central117)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame67" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo118" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito118" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito118" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior118" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central118" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo118)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito118)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito118)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior118)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central118)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame68" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo119" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito119" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito119" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior119" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central119" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo119)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito119)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito119)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior119)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central119)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+
+    <svg class="flexi-logo-svg" id="frame69" viewBox="0 0 200 200">
+        <rect x="13" y="10" width="180" height="180" rx="40" ry="40" fill="#000000"/> 
+        
+        <defs>
+          <linearGradient id="central-esquerdo120" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#C54EF7" />
+            <stop offset="10%" stop-color="#AA4CF0" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="80%" stop-color="#8943F2" />
+            <stop offset="100%" stop-color="#784CC8" />
+          </linearGradient>
+
+          <linearGradient id="inferior-direito120" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="55%" stop-color="#AA4CF0" />
+            <stop offset="100%" stop-color="#C54EF7" />
+          </linearGradient>
+
+          <linearGradient id="superior-direito120" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#784CC8" />
+            <stop offset="10%" stop-color="#7B3CE9" />
+            <stop offset="15%" stop-color="#8541EF" />
+            <stop offset="20%" stop-color="#8943F2" />
+            <stop offset="30%" stop-color="#9946F0" />
+            <stop offset="40%" stop-color="#AA4CF0" />
+            <stop offset="80%" stop-color="#C54EF7" />
+            <stop offset="100%" stop-color="#D952F9" />
+          </linearGradient>
+
+          <linearGradient id="circulo-maior120" x1="0%" y1="20%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181818" />
+            <stop offset="30%" stop-color="#2E2E2E" />
+            <stop offset="50%" stop-color="#151515" />
+            <stop offset="70%" stop-color="#101010" />
+            <stop offset="100%" stop-color="#080808" />
+          </linearGradient>
+
+          <linearGradient id="circulo-central120" x1="0%" y1="10%" x2="100%" y2="90%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="25%" stop-color="#FFFFFF" />
+            <stop offset="70%" stop-color="#565656" />
+            <stop offset="85%" stop-color="#373737" />
+            <stop offset="100%" stop-color="#434343" />
+            
+          </linearGradient>
+
+        </defs>
+
+        <path d="M 100 46 
+                C 112 47, 130 60, 100 59.5
+                C 90 60, 88 61, 80 65
+                C 38 92, 52 128, 90 148 
+                C 125 170, 95 180, 68 153 
+                C 18 100, 60 40, 100 46 Z" fill="url(#central-esquerdo120)" opacity="1"/>
+        <path d="M 100 50 
+                C 80 50, 60 63, 56 70 
+                C 42 90, 32 80, 41 64  
+                C 50 50, 70 35, 100 50 Z" fill="url(#inferior-direito120)" transform="rotate(170 100 100)" opacity="1"/>
+        <path d="M 128 70 
+                C 80 39, 50 75, 45 85 
+                C 35 110, 20 95, 25 80  
+                C 38 44, 100 40, 128 70 Z" fill= "url(#superior-direito120)" transform="rotate(110 100 100)" opacity="1"/>  
+        <circle class="opaco" cx="102.5" cy="102.5" r="38" fill="url(#circulo-maior120)"/> 
+        <circle cx="101" cy="101" r="23" fill="url(#circulo-central120)"/> 
+        <circle cx="101" cy="101" r="18" fill="#000000"/> 
+    </svg>
+  </div>
+<div class="logo-text-flexi">Fléxi</div>
+
+</body>
+</html>
+
+<!-- Usar em caso de manutenção entre a divisão de cada Tag SVG -->
+<!-- </div>
+<div class="logo-container"> -->

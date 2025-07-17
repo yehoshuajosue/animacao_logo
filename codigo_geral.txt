@@ -76,7 +76,6 @@
     </svg>
   </div>
 <div class="logo-text-flexi">Fléxi</div>
-
+<script src="script.js"></script>
 </body>
 </html>
-

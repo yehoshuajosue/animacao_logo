@@ -1,54 +1,70 @@
 document.addEventListener('DOMContentLoaded', () => {
     const frames = [];
-    // Pega todos os SVGs pelo ID
-    for (let i = 1; i <= 16; i++) { // Certifique-se que o número de frames está correto
+
+    for (let i = 1; i <= 100; i++) {
         const frame = document.getElementById(`frame${i}`);
         if (frame) {
             frames.push(frame);
         }
     }
+    // const frames = [];
+
+    // // Pega de frame1 até frame70
+    // for (let i = 1; i <= 80; i++) {
+    //     const frame = document.getElementById(`frame${i}`);
+    //     if (frame) {
+    //         frames.push(frame);
+    //     }
+    // }
+    
+    // // Agora adiciona de frame70 até frame55 (animação reversa)
+    // for (let i = 80; i >= 55; i--) {
+    //     const frame = document.getElementById(`frame${i}`);
+    //     if (frame) {
+    //         frames.push(frame);
+    //     }
+    // }
+    
 
     if (frames.length === 0) {
-        console.warn('Nenhum frame SVG encontrado. Verifique os IDs.');
+        console.warn('Nenhum frame SVG encontrado. Verifique os IDs no HTML.');
         return;
     }
 
     let currentFrameIndex = 0;
-    const frameDuration = 80; // Duração de cada frame em milissegundos (ajuste para a velocidade desejada)
+    const frameDuration = 50; // milissegundos por frame (ajuste aqui se quiser mais lento/rápido)
 
-    // Sequência de abertura (seus frames na ordem original)
-    // O frame 0 é o mais "aberto" (ou inicial), e o frame 15 (index 15, id="frame16") é o mais "fechado"
+    // Cria a sequência de abertura (frames 1 até 12)
     const openingSequence = frames;
 
-    // Sequência de fechamento (frames na ordem inversa da abertura, sem o primeiro e o último para evitar duplicação)
-    // Começamos do penúltimo frame (index 14, id="frame15") e vamos até o segundo (index 1, id="frame2")
+    // Cria a sequência de fechamento (frames 11 até 2)
     const closingSequence = [...frames].reverse().slice(1, -1);
 
-    // Combina as sequências para ter o ciclo completo (abrir e depois fechar)
+    // Junta abertura + fechamento para fazer o ciclo contínuo
     const animationSequence = [...openingSequence, ...closingSequence];
 
+    // Função que mostra um frame por vez
     function showFrame(index) {
-        // Esconde todos os frames
-        frames.forEach(frame => {
-            frame.classList.remove('active-frame');
-        });
-        // Exibe o frame atual da sequência de animação
+        // Oculta todos os frames
+        frames.forEach(frame => frame.classList.remove('active-frame'));
+
+        // Exibe o frame atual da sequência
         animationSequence[index].classList.add('active-frame');
     }
 
+    // Avança na sequência e reinicia se necessário
     function animateFrames() {
         showFrame(currentFrameIndex);
         currentFrameIndex++;
 
-        // Volta para o início da sequência de animação quando terminar
         if (currentFrameIndex >= animationSequence.length) {
-            currentFrameIndex = 0;
+            currentFrameIndex = 0; // reinicia do começo
         }
     }
 
-    // Inicia a animação
+    // Inicia a animação com um intervalo constante
     setInterval(animateFrames, frameDuration);
 
-    // Exibe o primeiro frame assim que a página carrega
+    // Mostra o primeiro frame imediatamente ao carregar
     showFrame(0);
 });

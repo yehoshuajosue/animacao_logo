@@ -1,6 +1,9 @@
 /* style.css */
 
 /* --- Fontes Personalizadas --- */
+
+/* Precisa de Manutenção pra incluir em um único .css */
+
 @font-face {
   font-family: 'Avallon'; 
   src: url('Avallon.ttf') format('truetype');
@@ -29,7 +32,7 @@ body {
 .flexi-logo-svg {
   width: 100%; 
   height: 100%;
-  display: block; /* aflterar para none quando */
+  display: none; /* aflterar para none quando */
 }
 
 .logo-text-flexi {
